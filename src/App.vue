@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+	<div id="app" class="container">
+		<Card>
+			<template #image>
+				<img
+					src="../src/assets/image-qr-code.png"
+					alt="bar code"
+					class="component__img"
+				/>
+			</template>
+			<template #title>
+				<h1 class="heading">
+					Improve your front-end skills by building projects
+				</h1>
+			</template>
+			<template #description>
+				<p class="description">
+					Scan the QR code to visit Frontend Mentor and take your
+					coding skills to the next level
+				</p>
+			</template>
+		</Card>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Alfred Thompson Ovie</a>.
+		</div>
+	</div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Card from "./components/CardComponent.vue";
 
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
+	name: "App",
+	components: {
+		Card,
+	},
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "./styles/global.scss";
 </style>

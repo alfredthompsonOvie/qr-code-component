@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+ box-sizing: border-box;
+ 
+}
+$White: hsl(0, 0%, 100%);
+$Lightgray: hsl(212, 45%, 89%);
+$Grayishblue: hsl(220, 15%, 55%);
+$Darkblue: hsl(218, 44%, 22%);
+
+$fs-paragraph: 15px;
+$ff: 'Outfit', sans-serif;
+
+
+*,*::before,*::after{
+ box-sizing: inherit;
+ margin: 0;
+ padding: 0;
+}
+body{
+ font-size: $fs-paragraph;
+ font-family: $ff;
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: $Lightgray;
+}
+img {
+ max-width: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+.card{
+ max-width: 300px;
+ padding: 1em;
+ text-align: center;
+ background-color: $White;
+ border-radius: 20px;
+}
+.component__img{
+ border-radius: 10px;
+}
+.heading{
+ font-size: 1.35rem;
+ font-weight: 700;
+ color: $Darkblue;
+ margin: .6em 0;
+}
+.contents{
+ padding: 0 .4em;
+}
+.description{
+ margin: 0 0 .8em;
+ color: $Grayishblue;
+}
+
+.attribution{
+ position: absolute;
+ bottom: 0;
+ }
+ .attribution { font-size: 11px; text-align: center; position: absolute;
+  bottom: 0; padding: .5em 0; }
+ .attribution a { color: hsl(228, 45%, 44%); }
